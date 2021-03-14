@@ -1,0 +1,70 @@
+@import "../../styles/colors"
+  
+.video
+  width: 100%
+  border-radius: 10px
+
+  background-color: $accent
+  box-shadow: 0 2px 4px 0 rgba(22, 242, 242, 0.5);
+  transition: .3s ease-in-out .1s
+  
+  a
+    width: 100%
+    text-decoration: none
+
+    .thumb
+      display: flex
+      justify-content: center
+      align-items: center
+      position: relative
+
+      img
+        width: 100%
+
+        border-radius: 10px
+        object-fit: cover
+
+      .icon
+        position: absolute
+
+        width: 50px
+        height: 50px
+        padding: 12.5px
+        
+        stroke: white
+        border-radius: 25px
+        background-color: rgba(0, 0, 0, .5)
+
+        transition: .3s ease-in-out .1s
+
+    &:hover
+      .icon
+        transform: scale(.9)
+        background-color: $accent
+
+
+    .info
+      padding: 20px
+      display: flex
+      flex-direction: column
+
+      .title,
+      .subtitle
+        transition: .3s ease-in-out .1s
+
+      .subtitle
+        font-size: 11px
+        color: $darkAccent
+        margin-bottom: 5px
+
+      .title
+        font-family: "Montserrat", sans-serif
+        color: $primary
+        font-weight: 600
+        text-transform: uppercase
+
+  &:hover
+    background-color: $darkAccent
+    a .info .title,
+    a .info .subtitle
+      color: white
