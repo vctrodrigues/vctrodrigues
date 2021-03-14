@@ -42,23 +42,17 @@ const Bio = () => {
       <Menu />
       <ProfilePhoto src={Photo} />
       <YoutubeVideo video={youtube_last_video} />
-      <Button>
-        <a
-          href={`https://youtube.com/watch?v=${youtube_last_video?.id.videoId}`}
-        >
-          📹 Último vídeo
-        </a>
+      <Button
+        href={`https://youtube.com/watch?v=${youtube_last_video?.id.videoId}`}
+      >
+        📹 Último vídeo
       </Button>
-      <Button>
-        <a href={`https://youtube.com/channel/${channelId}`}>
-          📲 Acesse o meu canal
-        </a>
+      <Button href={`https://youtube.com/channel/${channelId}`}>
+        📲 Acesse o meu canal
       </Button>
-      <Button>
-        <a href="/">👨🏻‍💻 Veja meu site</a>
-      </Button>
-      <Button>
-        <a href="mailto:hello@victorodrigues.dev">📧 Entrar em contato</a>
+      <Button>👨🏻‍💻 Veja meu site</Button>
+      <Button href="mailto:hello@victorodrigues.dev">
+        📧 Entrar em contato
       </Button>
       <SocialBar />
     </div>

@@ -34,7 +34,7 @@ export const ProfilePhoto = styled.img`
   object-fit: cover;
 `;
 
-export const Button = styled.button`
+export const Button = styled.a`
   height: 40px;
   width: fit-content;
   padding: 0 20px;
@@ -53,22 +53,16 @@ export const Button = styled.button`
   transition: 0.3s ease-in-out 0.1s;
   cursor: pointer;
 
-  a {
-    font-family: "Montserrat";
-    font-weight: 600;
-    text-decoration: none;
-    text-transform: uppercase;
+  font-family: "Montserrat";
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
 
-    color: #4907a2;
-    transition: 0.3s ease-in-out 0.1s;
-  }
+  color: #4907a2;
 
   &:hover {
     background-color: #0b8073;
-
-    a {
-      color: white;
-    }
+    color: white;
   }
 `;
 
