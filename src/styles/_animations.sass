@@ -1,0 +1,29 @@
+=bounce($bounce-type)
+  animation: $bounce-type .8s ease-in-out alternate-reverse infinite
+
+@keyframes bounce-horizontal
+  0%
+    transform: translateX(0px)
+  
+  100%
+    transform: translateX(-20px)
+
+@keyframes bounce-vertical
+  0%
+    transform: translateY(0px)
+  
+  100%
+    transform: translateY(-20px)
+
+=disappear($delay)
+  animation: disappear .3s ease-in-out $delay
+
+@keyframes disappear
+  0%
+    opacity: 1
+
+  100%
+    opacity: 0
+
+=menu-animations
+  animation: bounce-horizontal .8s ease-in-out alternate-reverse infinite, disappear .3s ease 10s normal forwards
