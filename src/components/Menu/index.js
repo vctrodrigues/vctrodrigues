@@ -23,16 +23,24 @@ const Menu = () => {
       <div className={`wrapper ${is_open ? `open` : ``}`}>
         <ul>
           <li>
-            <Link to="/">.home()</Link>
+            <Link to="/" onClick={toggleMenu}>
+              .home()
+            </Link>
           </li>
           <li>
-            <Link to="/">.about()</Link>
+            <Link to="/" onClick={toggleMenu}>
+              .about()
+            </Link>
           </li>
           <li>
-            <Link to="/">.works()</Link>
+            <Link to="/" onClick={toggleMenu}>
+              .works()
+            </Link>
           </li>
           <li>
-            <Link to="/">.contact()</Link>
+            <Link to="/" onClick={toggleMenu}>
+              .contact()
+            </Link>
           </li>
         </ul>
       </div>

@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 import Menu from "./Menu";
 import SocialBar from "./SocialBar";
+import YoutubeVideo from "./YoutubeVideo";
 
 export const Headline = styled.h1`
   font-family: "Montserrat", sans-serif;
@@ -25,4 +26,50 @@ export const CodeBlock = styled(CodeText)`
   border-radius: 10px;
 `;
 
-export { Menu, SocialBar };
+export const ProfilePhoto = styled.img`
+  width: 150px;
+  height: 150px;
+
+  border-radius: 75px;
+  object-fit: cover;
+`;
+
+export const Button = styled.button`
+  height: 40px;
+  width: fit-content;
+  padding: 0 20px;
+
+  border-radius: 20px;
+  border: 0;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #00edd4;
+  box-shadow: 0 2px 4px 0 rgba(22, 242, 242, 0.5);
+
+  transition: 0.3s ease-in-out 0.1s;
+  cursor: pointer;
+
+  a {
+    font-family: "Montserrat";
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: #4907a2;
+    transition: 0.3s ease-in-out 0.1s;
+  }
+
+  &:hover {
+    background-color: #0b8073;
+
+    a {
+      color: white;
+    }
+  }
+`;
+
+export { Menu, SocialBar, YoutubeVideo };
