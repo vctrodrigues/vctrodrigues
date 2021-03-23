@@ -1,8 +1,9 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 import Menu from "./Menu";
 import SocialBar from "./SocialBar";
 import YoutubeVideo from "./YoutubeVideo";
+import Breadcrumb from "./Breadcrumb";
 
 export const Headline = styled.h1`
   font-family: "Montserrat", sans-serif;
@@ -22,7 +23,7 @@ export const CodeText = styled.p`
 export const CodeBlock = styled(CodeText)`
   padding: 15px 30px;
   background-color: #24074a;
-  color: #4907a2;
+  color: #00edd4;
   border-radius: 10px;
 `;
 
@@ -34,7 +35,7 @@ export const ProfilePhoto = styled.img`
   object-fit: cover;
 `;
 
-export const Button = styled.a`
+const ButtonStyles = css`
   height: 40px;
   width: fit-content;
   padding: 0 20px;
@@ -58,12 +59,53 @@ export const Button = styled.a`
   text-decoration: none;
   text-transform: uppercase;
 
-  color: #4907a2;
+  color: #24074a;
 
   &:hover {
     background-color: #0b8073;
-    color: white;
+    color: #24074a;
+  }
+
+  .icon {
+    stroke: #24074a;
+  }
+
+  span {
+    margin-left: 5px;
+    font-family: "Montserrat", sans-serif;
+    color: #24074a;
   }
 `;
 
-export { Menu, SocialBar, YoutubeVideo };
+export const Button = styled.a`
+  ${ButtonStyles}
+`;
+
+const InputStyles = css`
+  border: 0;
+  border-radius: 10px;
+
+  margin: 5px 0;
+  padding: 0 20px;
+
+  background-color: #24074a;
+  color: #7957f2;
+`;
+
+export const Input = styled.input`
+  ${InputStyles}
+  height: 50px;
+`;
+
+export const Textarea = styled.textarea`
+  ${InputStyles}
+  height: 200px;
+  padding: 20px;
+`;
+
+export const InputButton = styled.button`
+  ${ButtonStyles}
+  border-radius: 10px;
+`;
+
+export { Menu, SocialBar, YoutubeVideo, Breadcrumb };
