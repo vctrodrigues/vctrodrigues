@@ -38,7 +38,7 @@ const Menu = () => {
             </Link>
           </li>
           <li>
-            <Link to="/" onClick={toggleMenu}>
+            <Link to="/contact" onClick={toggleMenu}>
               .contact()
             </Link>
           </li>
